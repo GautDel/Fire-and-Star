@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sniglet"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/assets/css/star.css?version=1.9" />
+    <title>Star Quotes</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="quote-gen">
+        <h1 class="quote-gen_title move-in-left">STAR QUOTES</h1>
+        <div class="quote-gen-multi"></div>
+        <span class="quote-gen_gen"></span>
+        <span class="quote-gen_cursor">|</span>
+        <div class="quote-gen_btn-container move-in-bot">
+          <button class="quote-gen_btn quote-gen_btn-comet">COMET</button>
+          <button class="quote-gen_btn quote-gen_btn-star">STAR SHOWER</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="starshower_container hide">
+      <h1 class="starshower_title">Star Shower</h1>
+      <h3 class="starshower_subtitle">Star Strikes?</h3>
+      <ul class="starshower_options">
+        <li class="starshower_opt opt-1">1</li>
+        <li class="starshower_opt opt-2">2</li>
+        <li class="starshower_opt opt-3">3</li>
+        <li class="starshower_opt opt-4">4</li>
+        <li class="starshower_opt opt-5">5</li>
+      </ul>
+    </div>
+
+    <div class="reset-container hide">
+      <button class="quote-gen_btn reset-container_uni">Universe?</button>
+      <button class="quote-gen_btn reset-container_strike">
+        More Strikes?
+      </button>
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <script src="/assets/js/star.js"></script>
+
+    <div class="landing-spiral">
+      <a href="index.html"
+        ><img src="/imgs/landing_spiral.png" alt="landing" />
+      </a>
+    </div>
+  </body>
+</html>

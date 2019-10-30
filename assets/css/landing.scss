@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: url("/imgs/black_bg.png");
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.fire-cont,
+.star-cont {
+  h3 {
+    text-align: center;
+    line-height: 10rem;
+  }
+  img {
+    width: 40rem;
+    height: auto;
+    cursor: pointer;
+    transition: all 1s;
+    animation-play-state: paused;
+
+    &:hover {
+      animation: spiral 0.4s linear forwards;
+      animation-play-state: running;
+    }
+
+    &:not(:hover) {
+      animation: revSpiral 0.4s linear forwards;
+    }
+  }
+}
+
+.fire-title {
+  font-size: 8rem;
+  font-family: "East Sea Dokdo", cursive;
+  color: #ff1000;
+  letter-spacing: 0.2rem;
+}
+
+.star-title {
+  font-size: 5.5rem;
+  font-family: "Sniglet", cursive;
+  color: #38f3f1;
+  letter-spacing: 0.3rem;
+}
+
+@keyframes spiral {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg) scale(1.2);
+  }
+}
+
+@keyframes revSpiral {
+  0% {
+    transform: rotate(180deg) scale(1.2);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .fire-cont,
+  .star-cont {
+    h3 {
+      text-align: center;
+      line-height: 8rem;
+    }
+    img {
+      margin: auto;
+      width: 18rem;
+      height: auto;
+    }
+  }
+
+  .fire-title {
+    font-size: 5rem;
+    font-family: "East Sea Dokdo", cursive;
+    color: #ff1000;
+    letter-spacing: 0.2rem;
+  }
+
+  .star-title {
+    font-size: 3rem;
+    font-family: "Sniglet", cursive;
+    color: #38f3f1;
+    letter-spacing: 0.3rem;
+  }
+}
